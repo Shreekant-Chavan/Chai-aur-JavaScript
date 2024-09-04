@@ -58,3 +58,31 @@ console.log(typeof anotherId);  // Symbol
 console.log(typeof heros);  // Object
 console.log(typeof myObj);  // Object
 console.log(typeof myFunction);  // Function
+
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++
+
+// Stack ( Primitive ), Heap ( Reference / Non-Primitive )
+
+
+let youtubeName = "Shreekant-Chavan.com"
+let anotherName = youtubeName
+anotherName = "Flamboy-Gaming.com"
+
+console.log(youtubeName);
+console.log(anotherName);
+
+
+let userOne = {
+    email : "shree@shree.com",
+    upi : "user@ybl" 
+}
+
+let userTwo = userOne
+
+userTwo.email = "shree@google.com"
+
+console.log(userOne);
+console.log(userTwo);
