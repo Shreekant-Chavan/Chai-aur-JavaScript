@@ -73,3 +73,40 @@ console.log(typeof stringNumber);
 // let valueInNumber = Number(score)
 // console.log(typeof valueInNumber);  // number
 // console.log (valueInNumber);  // NaN ( Not A Number )
+
+
+
+
+
+
+
+
+
+// *************************** Operations *******************************
+
+
+let value = 69
+let negVal = -value
+//console.log(negVal);  // -69
+
+// console.log( 2 + 2 );  // addition
+// console.log( 2 - 2 );  // subtraction
+// console.log( 2 * 2 );  // multiplication
+// console.log( 2 / 2 );  // division
+// console.log( 2 ** 3 );  // power (square, cube)
+// console.log( 2 % 2 );  // remender
+
+let str1 = "Hello"
+let str2 = " Shree"
+let str3 = str1 + str2
+//console.log(str3);
+
+
+// console.log( "1" + 2 ); // 12
+// console.log( 1 + "2" );  // 12
+// console.log( "1" + 2 + 2 );  // 122
+// console.log( 1 + 2 + "2" );  // 32
+
+let gameCounter = 100;
+gameCounter++
+console.log(gameCounter);
