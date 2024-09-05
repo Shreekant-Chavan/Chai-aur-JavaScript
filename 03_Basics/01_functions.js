@@ -50,3 +50,61 @@ function loginUserMessage1(username = "Shree") {
 }
 
 console.log(loginUserMessage1())  //  Please enter a Username 
+
+
+
+
+
+
+
+function calculateCartPrice(num1) {
+    return num1
+}
+
+console.log(calculateCartPrice(200, 400, 550, 999));  //  200
+
+
+// For Displaying all Value we use "Rest" operator      "Rset & Spread"
+
+
+function calculateCartPrice(...num1) {
+    return num1
+}
+
+console.log(calculateCartPrice(200, 400, 550, 999));  //  [ 200, 400, 550, 999 ]
+
+
+
+
+
+const user = {
+    username: "Shree",
+    price: 999,
+}
+
+function handleObject(anyobject) {
+    console.log(`Username is ${anyobject.username} & price is ${anyobject.price}`);
+}
+
+handleObject(user)  //  Username is Shree & price is 999
+
+//  OR
+
+handleObject({
+    username: "Sam",
+    price: 699,
+})  //  Username is Sam & price is 699
+
+
+
+const myNewArr = [ 200, 100, 600, 500, 800 ]
+
+function returnSecondValue(getArray) {
+    return getArray[1]
+}
+
+console.log(returnSecondValue(myNewArr))  //  100
+
+// OR
+
+console.log(returnSecondValue([200, 100, 600, 500, 800]));  //  100
