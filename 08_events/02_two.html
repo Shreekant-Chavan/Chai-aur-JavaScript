@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async JS</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <h1>Chai aur Code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    setTimeout( function() {
+        console.log("Shreekant");
+    }, 2000)
+
+    function sayShree() {
+        console.log("Shree");
+    }
+    setTimeout(sayShree, 2000)
+    
+    const textChange = function() {
+        document.querySelector('h1').innerHTML = "Best JS Serires"
+    }
+    
+    // setTimeout(textChange, 2000)
+
+
+    const changeMe = setTimeout(textChange, 2000)
+
+    document.querySelector('#stop').addEventListener('click', function() {
+        clearTimeout(changeMe)
+        console.log("Timeout STOPEEDDD");
+    })
+
+    
+</script>
+</html>
